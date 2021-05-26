@@ -1,1 +1,1 @@
-osc4py3==1.0.8
+python-osc==1.7.6
