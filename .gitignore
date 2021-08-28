@@ -1,3 +1,6 @@
 .vscode/
 venv/
 settings.json
+keymap.json
+atem_board/__pycache__
+__pycache__

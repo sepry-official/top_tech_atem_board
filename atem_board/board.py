@@ -1,8 +1,7 @@
-import os
-import json
-from typing import Union, Optional, Any
+from typing import Any
 
 from pythonosc.udp_client import SimpleUDPClient
+
 
 class Board(object):
     def __init__(self, ip: str, port: int) -> None:
@@ -13,4 +12,3 @@ class Board(object):
     def _send_message(self, event, message: str, param: Any = None) -> None:
         if event.event_type == "up":
             self._client.send_message(message, param)
-
